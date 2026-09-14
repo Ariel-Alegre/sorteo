@@ -1,0 +1,190 @@
+{
+
+   "Navbar": {
+    "title": "Lottery"
+  },
+    "Btn": {
+   "btnUpdate": "update"
+  },
+
+ "home": {
+  "title": "Lottery Statistics",
+  "contact": "Contact via WhatsApp"
+},
+
+  "Home": {
+    "headerTable1": "Last 6 draws",
+    "headerTable2": "Draws not coming out",
+
+    "description1": "A number has 2 digits.",
+    "description2": "The first one is the ten.",
+    "description3": "The second digit is the ending.",
+    "titleBox": "Press on the square to see the table",
+    "box1": "The 15 oldest numbers to come out",
+    "box2": "Number of draws a number doesn't come out",
+    "box3": "State of the tens and endings",
+    "box4": "Number and times not showing up",
+    "box5": "Which numbers came out the most in the last 23 draws?",
+    "box6": "The last digit compared to the first",
+    "box7": "The second digit is bigger, the same or smaller than the first one",
+    "box8": "% of even and odd numbers in the first or last digit",
+    "box9": "Total sum of the two digits",
+    "box10": "Combination of even and uneven numbers in the two digits",
+    "box11": "% of every ten or ending in coming out",
+    "box12": "The last 500 draws"
+  },
+  "Box1": {
+     "headerTable1": "List of the 15 oldest numbers to come out",
+    "headerTable2": "Draws",
+    "headerTable3": "Date"
+  },
+    "Box2":{
+    "headerTable1": "Number in the first or second digit",
+    "headerTable2": "Draws not coming out",
+    "footerTable1": "The average is for a number in the first digit or second to show up every 5 draws.",
+    "footerTable2": "Under 5 draws the number is coming out above average.",
+    "footerTable3": "Above 5 draws the number is coming out under average."
+   
+  },
+
+      "Box3":{
+    "headerTable1": "Tens",
+    "headerTable2": "Number of draws not coming out",
+    "headerTable3": "Ending",
+    "headerTable4": "Number of draws not coming out",
+
+      "footerTable1": "The average  for the tens and endings is to come out every 10 draws.",
+    "footerTable2": "Under 10 is coming out more often than it should.",
+    "footerTable3": "Above 10 is coming out less often than it should."
+
+  },
+     "Box4":{
+    "headerTable1": "Draws not coming out",
+    "headerTable2": "Last date"
+  
+  },
+
+        "Box5":{
+    "headerTable1": "Numbers",
+    "headerTable2": "In the last 23 draws  it came out twice or more"
+ 
+
+  
+  },
+
+           "Box6":{
+    "headerTable1": "Second digit is bigger than the first digit",
+    "headerTable2": "Same to the first one",
+     "headerTable3": "1 more",
+     "headerTable4": "2 more",
+    "headerTable5": "3 more",
+    "headerTable6": "4 more",
+    "headerTable7": "5 more",
+    "headerTable8": "6 more",
+    "headerTable9": "7 more",
+    "headerTable10": "8 more",
+    "headerTable11": "9 more",
+    "headerTableGeneral": "draws not coming out"
+
+  },
+"Box7": {
+  "headerTable1": "Second digit bigger than the first one",
+  "filaTable1": "Bigger",
+  "filaTable2": "Smaller",
+  "filaTable3": "The same",
+
+  "headerTable2": "In the last 20 draws the second digit is bigger than the first digit (e.g: 04 - 28 - 39)",
+
+  "headerTable4": "Bigger",
+  "headerTable5": "Same",
+  "headerTable6": "Smaller",
+  "headerTable7": "Average is 45%",
+  "headerTable8": "Average is 10%",
+  "headerTable9": "Average is 45%",
+  "footerTable1": "Below average is coming less often than it should",
+  "footerTable2": "Under average is coming more often than it should"
+},
+
+    "Box8": {
+    "headerTitle": "% of even and odd numbers in the first or second digit",
+    "tableHeader": "In 41 draws",
+
+    "blocks": {
+      "b1": {
+        "top": "Even in the first digit",
+        "mid": "43.90243902 %",
+        "foot": "Evens are: 0 2 4 6 8"
+      },
+      "b2": {
+        "top": "Odd in the first digit",
+        "mid": "56.09756098 %",
+        "foot": "Odds are: 1 3 5 7 9" 
+      },
+      "b3": {
+        "top": "Even in the second digit",
+        "mid": "53.65853659 %",
+        "foot": "Evens are: 0 2 4 6 8"
+      },
+      "b4": {
+        "top": "Odd  in the second digit",
+        "mid": "46.34146341 %",
+        "foot": "Odds are: 1 3 5 7 9"
+      }
+    },
+"finalText": "Under 50% comes out less often than the average.",
+"finalText2": "Above 50% comes out more often than the average."
+
+  },
+
+          "Box9":{
+    "headerTable1": "Sum of the two digits",
+    "headerTable2": "Times not coming out",
+    "headerTable3": "% in coming out",
+    "headerTable4": "The numbers are",
+    "headerFooter1": "Under 100% it comes out more often than the average.",
+    "headerFooter2": "Above 100% it comes out less often than the average."
+
+
+  },
+    "Box10": {
+    "headerTable1": "Draws not coming out",
+    "headerTable2": "% in 41 draws",
+    "headerTable3": "% in 100 draws",
+    "headerFooter1": "I=odd",
+    "headerFooter2": "P=even",
+    "headerFooter3": "The average is 4 in the first column and 25 in the second and third column",
+    "headerFooter4": "Under 4 in the first column it is coming out more times than what is normal",
+    "headerFooter5": "Under 25 in the second and third column it is coming out more than what is normal",
+    "headerFooter6": "Above 4 in the first column it is coming out less times than what is normal",
+    "headerFooter7": "Above 25 in the second and third column it is coming out less times than what is normal"
+
+  },
+
+   "Box11": {
+    "headerTitle": "Average not coming out in last:",
+
+    "headerTable1": "Tens",
+    "headerTable2": "40 draws",
+    "headerTable3": "10 draws",
+    "headerTable4": "Last 5 times it came out",
+    "headerTable5": "Last 2 times it came out",
+    "headerTable6": "Ending",
+    "headerTable7": "40 draws",
+    "headerTable8": "10 draws",
+    "headerTable9": "Last 5 times it came out",
+    "headerTable10":"Last 2 times it came out",
+
+    "footerTable1": "The average for a ten and an ending is 10 times not coming out",
+    "footerTable2": "Under 10 it is coming out more often than the average",
+    "footerTable3": "Above 10 it is coming out less often than the average"
+  },
+
+    "Box12": {
+    "headerTitle": "The last 500 draws"
+
+  
+  }
+
+
+}
+  

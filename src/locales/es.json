@@ -1,0 +1,191 @@
+{
+  "Navbar": {
+    "title": "Sorteo"
+  },
+
+  "Btn": {
+    "btnUpdate": "Recargar"
+  },
+
+  "home": {
+    "title": "Estadística de Loterías",
+    "contact":"Contacto al whatsapp"
+  },
+  "Home": {
+    "headerTable1": "Últimos 6 sorteos",
+    "headerTable2": "Sorteos sin salir",
+
+    "description1": "Un número tiene dos cifras.",
+    "description2": "La primera cifra son las decenas.",
+    "description3": "La segunda es la terminación.",
+
+    "titleBox": "Pulse en el recuadro para ver la tabla",
+
+    "box1": "Los 15 números más viejos en salir",
+    "box2": "Número de sorteos sin aparecer tal cifra",
+    "box3": "Estado de las decenas y las terminaciones",
+    "box4": "Número y sorteos sin salir",
+    "box5": "¿Qué número salió más veces en los ultimos 23 sorteos?",
+    "box6": "La segunda cifra con respecto a la primera",
+    "box7": "la segunda cifra es mayor, igual o menor que la primera",
+    "box8": "% de los pares o impares en la primer y segunda cifra",
+    "box9": "Suma total de las dos cifras del número",
+    "box10": "Combinacion de numeros pares e impares",
+    "box11": "% en salir cada decena y terminación",
+    "box12": "Los últimos 500 sorteos"
+  },
+
+  "Box1": {
+    "headerTable1": "Lista de los 15 números más viejos en salir",
+    "headerTable2": "Sorteos",
+    "headerTable3": "Fecha"
+  },
+
+  "Box2": {
+    "headerTable1": "Número en la 1ª o 2ª cifra",
+    "headerTable2": "Sorteos sin aparecer",
+    "footerTable1": "La media es que un número en la primera cifra o en la segunda aparezca cada 5 sorteos",
+
+    "footerTable2": "Por debajo de 5 sorteos está saliendo más de lo normal",
+    "footerTable3": "Por encima de 5 sorteos está saliendo menos de lo normal"
+  },
+
+  "Box3": {
+    "headerTable1": "Decenas",
+    "headerTable2": "N° de sorteos sin salir",
+    "headerTable3": "Terminación",
+    "headerTable4": "N° de sorteos sin salir",
+
+    "footerTable1": "La media es que tanto una decena como una terminación lleven 10 sorteos sin salir",
+    "footerTable2": "Por debajo de 10 está saliendo más de lo normal",
+    "footerTable3": "Por encima de 10 está saliendo menos de lo normal"
+  },
+
+  "Box4": {
+    "headerTable1": "Sorteos sin caer",
+    "headerTable2": "Última fecha"
+  },
+
+  "Box5": {
+    "headerTable1": "Números",
+    "headerTable2": "En los últimos 23 sorteos salió 2 o más veces"
+  },
+
+  "Box6": {
+    "headerTable1": "La segunda cifra es mayor que la primer cifra",
+    "headerTable2": "igual a la primera",
+    "headerTable3": "1 más",
+    "headerTable4": "2 más",
+    "headerTable5": "3 más",
+    "headerTable6": "4 más",
+    "headerTable7": "5 más",
+    "headerTable8": "6 más",
+    "headerTable9": "7 más",
+    "headerTable10": "8 más",
+    "headerTable11": "9 más",
+    "headerTableGeneral": "SORTEOS SIN SALIR"
+  },
+   "Box7": {
+    "headerTable1": "Segunda cifra mayor que la primera",
+    "filaTable1": "Más alta",
+    "filaTable2": "Más baja",
+    "filaTable3": "Son iguales",
+
+
+    "headerTable2": "En los últimos 20 sorteos la segunda cifra es más alta que la primera cifra ( EJ: 04 - 28 - 39)",
+
+    "headerTable4": "Más alta",
+    "headerTable5": "Igual",
+    "headerTable6": "Más baja",
+    "headerTable7": "Debe ser 45%",
+    "headerTable8": "Debe ser 10%",
+    "headerTable9": "Debe ser 45%",
+    "footerTable1": "Por debajo de lo que debe ser está saliendo menos de lo normal",
+    "footerTable2": "Por encima de lo que debe ser está saliendo más de lo normal"
+
+
+
+
+  },
+
+  "Box8": {
+    "headerTitle": "% de los pares o impares en la primer y segunda cifra",
+    "tableHeader": "EN 41 SORTEOS",
+
+    "blocks": {
+      "b1": {
+        "top": "Par en la primera cifra",
+        "mid": "43.90243902 %",
+        "foot": "Pares son: 0 2 4 6 8"
+      },
+      "b2": {
+        "top": "Impar en la segunda cifra",
+        "mid": "56.09756098 %",
+        "foot": "Impares son: 1 3 5 7 9"
+      },
+      "b3": {
+        "top": "Par en la primera cifra",
+        "mid": "53.65853659 %",
+        "foot": "Pares son: 0 2 4 6 8"
+      },
+      "b4": {
+        "top": "Impar en la segunda cifra",
+        "mid": "46.34146341 %",
+        "foot": "Impares son: 1 3 5 7 9"
+      }
+    },
+    "finalText": "Por debajo del 50% está saliendo menos de lo normal",
+    "finalText2": "Por encima del 50% está saliendo más de lo normal"
+  },
+
+  "Box9": {
+    "headerTable1": "Suma de las dos cifras",
+    "headerTable2": "Veces sin caer",
+    "headerTable3": "% en salir",
+    "headerTable4": "Los números son",
+    "headerFooter1": "Por debajo de 100% está saliendo más de lo normal",
+    "headerFooter2": "Por encima de 100% está saliendo menos de lo normal"
+  },
+
+  "Box10": {
+    "headerTable1": "Sorteos sin salir",
+    "headerTable2": "% en 41 sorteos",
+    "headerTable3": "% en 100 sorteos",
+    "headerFooter1": "i= impar =",
+    "headerFooter2": "p= par =",
+    "headerFooter3": "La media es que sea cada 4 sorteos en la primera columna y un 25% de los sorteos en la segunda y tercera columna",
+    "headerFooter4": "Por debajo de 4 en la primera columna está saliendo más de lo normal",
+    "headerFooter5": "Por debajo de 25% en la segunda y tercera columna está saliendo menos de lo normal",
+    "headerFooter6": "Por encima de 4 en la primera columna está saliendo menos de lo normal",
+    "headerFooter7": "Por encima de 25% en la segunda y tercera columna está saliendo más de lo normal"
+
+  },
+
+    "Box11": {
+    "headerTitle": "Media sin salir en últimos:",
+
+    "headerTable1": "Decenas",
+    "headerTable2": "40 Sorteos",
+    "headerTable3": "10 Sorteos",
+    "headerTable4": "5 últimas veces que salió",
+    "headerTable5": "2 últimas veces que salió",
+    "headerTable6": "Terminación",
+    "headerTable7": "40 Sorteos",
+    "headerTable8": "10 Sorteos",
+    "headerTable9": "5 últimas veces que salió",
+    "headerTable10":"2 últimas veces que salió",
+
+    "footerTable1": "La media es que tanto una decena como una terminación lleven 10 sorteos sin salir",
+    "footerTable2": "Por debajo de 10 está saliendo más de lo normal",
+    "footerTable3": "Por encima de 10 está saliendo menos de lo normal"
+  }
+  ,
+    "Box12": {
+    "headerTitle": "Los últimos 500 sorteos"
+
+  
+  }
+
+ 
+
+}
