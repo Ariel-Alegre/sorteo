@@ -31,7 +31,7 @@ const statNavigationMap = {
   12: "Last500Draws",
 };
 
-const BASE_URL = "https://script.google.com/macros/s/AKfycbxPnfs76U4yKLfIjR8msumNKT3mn7gMDtIGe2sxxXAhA8-1OzY-8mbTSOINMyqDQy94KQ/exec"
+const BASE_URL = "https://script.google.com/macros/s/AKfycbwOWSGxHp9uuf5dLvSmyyKiM0IAkZuZ8REYgYh6Bc8TNhPg3V1chygLuSiS7IfaBHK4Pg/exec"
 
 export default function SorteoScreen({ navigation, route }) {
   const { title, sorteoId } = route.params;

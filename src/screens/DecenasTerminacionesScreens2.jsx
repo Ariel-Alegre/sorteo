@@ -14,7 +14,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useResponsiveLayout } from "../utils/responsive";
 
 
-const BASE_URL = "https://script.google.com/macros/s/AKfycbxPnfs76U4yKLfIjR8msumNKT3mn7gMDtIGe2sxxXAhA8-1OzY-8mbTSOINMyqDQy94KQ/exec"
+const BASE_URL = "https://script.google.com/macros/s/AKfycbwOWSGxHp9uuf5dLvSmyyKiM0IAkZuZ8REYgYh6Bc8TNhPg3V1chygLuSiS7IfaBHK4Pg/exec"
 
 const headerColors = ["#f8a7ff", "#d3d3d3", "#d3d3d3", "#d3d3d3", "#d3d3d3"];
 const columnColorsDecenas = ["#FFD54F", "#c2ffdb", "#fcc2ff", "#c2fbff", "#ffccc2"];

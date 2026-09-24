@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useResponsiveLayout } from "../utils/responsive";
 
-const BASE_URL = "https://script.google.com/macros/s/AKfycbxPnfs76U4yKLfIjR8msumNKT3mn7gMDtIGe2sxxXAhA8-1OzY-8mbTSOINMyqDQy94KQ/exec"
+const BASE_URL = "https://script.google.com/macros/s/AKfycbwOWSGxHp9uuf5dLvSmyyKiM0IAkZuZ8REYgYh6Bc8TNhPg3V1chygLuSiS7IfaBHK4Pg/exec"
 
 const formatPercentage = (value, symbol = "%") => {
   if (value === null || value === undefined || value === "") return "";
@@ -34,9 +34,13 @@ export default function PairsAndOddsScreen({ navigation, route }) {
   const ui = useResponsiveLayout();
 
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-console.log(data?.pairsAndOdds)
+
+  const pairsAndOdds = Array.isArray(data?.pairsAndOdds)
+    ? data.pairsAndOdds
+    : [];
+  const hasPairsAndOdds = pairsAndOdds.length > 0;
   const loadData = async () => {
     try {
       setLoading(true);
@@ -86,9 +90,9 @@ console.log(data?.pairsAndOdds)
     percentageRowIndex,
     footRowIndex
   ) => {
-    const topText = data?.pairsAndOdds?.[topRowIndex]?.[0];
-    const percentageRow = data?.pairsAndOdds?.[percentageRowIndex];
-    const footText = data?.pairsAndOdds?.[footRowIndex]?.[0];
+    const topText = pairsAndOdds[topRowIndex]?.[0];
+    const percentageRow = pairsAndOdds[percentageRowIndex];
+    const footText = pairsAndOdds[footRowIndex]?.[0];
     const percentage = formatPercentage(
       percentageRow?.[0],
       percentageRow?.[1]
@@ -105,7 +109,7 @@ console.log(data?.pairsAndOdds)
 
         <View style={[styles.row, styles.pink]}>
           <Text style={styles.cell}>
-            {percentage || t(`Box8.blocks.${key}.mid`)}
+            {percentage || "-"}
           </Text>
         </View>
 
@@ -185,7 +189,7 @@ console.log(data?.pairsAndOdds)
           </Text>
         )}
 
-        {!loading && (
+        {!loading && hasPairsAndOdds && (
           <View>
             {renderBlock("b1", 0, 1, 2)}
             {renderBlock("b2", 3, 4, 5)}
@@ -194,16 +198,20 @@ console.log(data?.pairsAndOdds)
 
             <View style={styles.table}>
               <Text style={styles.footText}>
-                {data?.pairsAndOdds?.[11]?.[0] || t("Box8.finalText")}
+                {pairsAndOdds[11]?.[0] || t("Box8.finalText")}
               </Text>
             </View>
 
             <View style={styles.table}>
               <Text style={styles.footText}>
-                {data?.pairsAndOdds?.[12]?.[0] || t("Box8.finalText2")}
+                {pairsAndOdds[12]?.[0] || t("Box8.finalText2")}
               </Text>
             </View>
           </View>
+        )}
+
+        {!loading && !error && !hasPairsAndOdds && (
+          <Text style={styles.emptyText}>{t("Box8.noData")}</Text>
         )}
       </View>
     </ImageBackground>
@@ -223,6 +231,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+  },
+
+  emptyText: {
+    marginTop: 20,
+    color: "#fff",
+    fontSize: 14,
+    fontWeight: "700",
+    textAlign: "center",
   },
 
   headerRow: {

@@ -11,7 +11,7 @@ import Header from "../components/Header";
 import { useTranslation } from "react-i18next";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const BASE_URL = "https://script.google.com/macros/s/AKfycbxLH2RWDiMb1L9mag4owxi1asKwJ5DgjNdG9e8BgvpwNmpxk-SsykbaqqpP38kZmepesw/exec"
+const BASE_URL = "https://script.google.com/macros/s/AKfycbwOWSGxHp9uuf5dLvSmyyKiM0IAkZuZ8REYgYh6Bc8TNhPg3V1chygLuSiS7IfaBHK4Pg/exec"
 
 export default function SecondDigitComparisonScreen({ navigation, route }) {
   const { sorteoId, title } = route.params;

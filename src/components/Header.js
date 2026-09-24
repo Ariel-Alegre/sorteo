@@ -3,6 +3,7 @@ import { Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Appbar } from "react-native-paper";
 import { useTranslation } from "react-i18next";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import AdBanner from "./AdBanner";
 
 const LANGUAGE_KEY = "appLanguage";
 
@@ -41,15 +42,18 @@ export default function Header({ title, back = false, navigation }) {
   const flag = i18n.language === "es" ? "🇬🇧" : "🇪🇸";
 
   return (
-    <Appbar.Header>
-      {back && <Appbar.BackAction onPress={() => navigation.goBack()} />}
+    <>
+      <Appbar.Header>
+        {back && <Appbar.BackAction onPress={() => navigation.goBack()} />}
 
-      <Appbar.Content title={title} />
+        <Appbar.Content title={title} />
 
-      <TouchableOpacity onPress={toggleLanguage}>
-        <Text style={styles.flag}>{flag}</Text>
-      </TouchableOpacity>
-    </Appbar.Header>
+        <TouchableOpacity onPress={toggleLanguage}>
+          <Text style={styles.flag}>{flag}</Text>
+        </TouchableOpacity>
+      </Appbar.Header>
+      <AdBanner />
+    </>
   );
 }
 

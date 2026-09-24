@@ -6,6 +6,7 @@ import {
   ImageBackground,
   ActivityIndicator,
   Dimensions,
+  ScrollView,
 } from "react-native";
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
@@ -13,7 +14,7 @@ import { useTranslation } from "react-i18next";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useResponsiveLayout } from "../utils/responsive";
 
-const BASE_URL = "https://script.google.com/macros/s/AKfycbxPnfs76U4yKLfIjR8msumNKT3mn7gMDtIGe2sxxXAhA8-1OzY-8mbTSOINMyqDQy94KQ/exec"
+const BASE_URL = "https://script.google.com/macros/s/AKfycbwOWSGxHp9uuf5dLvSmyyKiM0IAkZuZ8REYgYh6Bc8TNhPg3V1chygLuSiS7IfaBHK4Pg/exec"
 
 const BASE_WIDTH = 360;
 
@@ -76,14 +77,16 @@ export default function PairCombinationScreen({ navigation, route }) {
     >
       <Header title={title} back navigation={navigation} />
 
-      <View
-        style={[
+      <ScrollView
+        style={styles.scrollView}
+        contentContainerStyle={[
           styles.container,
           {
             padding: ui.space(12, { min: 8, max: 12 }),
             paddingBottom: Math.max(10, 20 * heightScale),
           },
         ]}
+        showsVerticalScrollIndicator={false}
       >
         {/* CABECERA */}
         <View style={styles.headerRow}>
@@ -368,7 +371,7 @@ export default function PairCombinationScreen({ navigation, route }) {
             ))}
           </View>
         )}
-      </View>
+      </ScrollView>
     </ImageBackground>
   );
 }
@@ -376,8 +379,12 @@ export default function PairCombinationScreen({ navigation, route }) {
 const styles = StyleSheet.create({
   background: { flex: 1 },
 
-  container: {
+  scrollView: {
     flex: 1,
+  },
+
+  container: {
+    flexGrow: 1,
     padding: 12,
     paddingBottom: 30,
   },
@@ -418,11 +425,8 @@ const styles = StyleSheet.create({
 
   tableWrapper: {
     marginTop: 6,
-    flexShrink: 1,
-    maxHeight: "100%",
     alignItems: "center",
     alignSelf: "center",
-    overflow: "hidden",
   },
 
   table: {

@@ -16,7 +16,7 @@ import { useFocusEffect } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const BASE_URL = "https://script.google.com/macros/s/AKfycbw-B6fMcQaQVIcjj_YBdNN1VWmJgXRFC6UNOPj-Q06mDM-Qa1el5PeT5HJj4CqvD51qmA/exec";
+const BASE_URL = "https://script.google.com/macros/s/AKfycbwOWSGxHp9uuf5dLvSmyyKiM0IAkZuZ8REYgYh6Bc8TNhPg3V1chygLuSiS7IfaBHK4Pg/exec";
 
 const SCROLL_STEP = 80;
 

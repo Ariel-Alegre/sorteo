@@ -111,6 +111,7 @@
   "Box8": {
     "headerTitle": "% de los pares o impares en la primer y segunda cifra",
     "tableHeader": "EN 41 SORTEOS",
+    "noData": "No hay datos disponibles para este sorteo",
 
     "blocks": {
       "b1": {

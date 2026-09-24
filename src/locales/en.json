@@ -108,6 +108,7 @@
     "Box8": {
     "headerTitle": "% of even and odd numbers in the first or second digit",
     "tableHeader": "In 41 draws",
+    "noData": "No data available for this draw",
 
     "blocks": {
       "b1": {
@@ -187,4 +188,3 @@
 
 
 }
-  
